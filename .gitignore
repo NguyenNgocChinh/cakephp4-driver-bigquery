@@ -1,6 +1,7 @@
 /vendor
 /.idea
-/phpunit.xml
 composer.phar
 .docker
 .git
+credentials.json
+.env

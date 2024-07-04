@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace App\Database\BigQuery;
+namespace Chinh\BigQuery;
 
-use App\Database\BigQuery\Driver\BigQuery;
+use Chinh\BigQuery\BigQueryDriver;
 use Cake\Database\Exception\MissingConnectionException;
 use Cake\Database\Connection as CakeConnection;
 use Exception;
 
-class Connection extends CakeConnection
+class BigQueryConnection extends CakeConnection
 {
     /**
      * Contains the configuration param for this connection
@@ -67,7 +67,7 @@ class Connection extends CakeConnection
         if ($driver === null) {
             return $this->_driver;
         }
-        $this->_driver = new BigQuery($config);
+        $this->_driver = new BigQueryDriver($config);
 
         return $this->_driver;
     }

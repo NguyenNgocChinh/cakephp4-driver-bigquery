@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Database\BigQuery;
+namespace Chinh\BigQuery;
 
 use Cake\ORM\Query as CakeQuery;
 use Cake\Database\StatementInterface;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Model\Table;
+namespace Chinh\BigQuery\Model\Table;
 
 use Exception;
 use ArrayObject;
@@ -12,7 +12,7 @@ use RuntimeException;
 use Cake\Datasource\EntityInterface;
 use Cake\Database\Schema\TableSchema;
 use Cake\Datasource\ConnectionManager;
-use App\Database\BigQuery\BigQueryQuery;
+use Chinh\BigQuery\BigQueryQuery;
 use Google\Cloud\BigQuery\BigQueryClient;
 use Cake\Database\Schema\TableSchemaInterface;
 use Cake\ORM\Exception\RolledbackTransactionException;

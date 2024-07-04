@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Database\BigQuery;
+namespace Chinh\BigQuery;
 
 use Cake\Event\Event;
 use Cake\ORM\Behavior;

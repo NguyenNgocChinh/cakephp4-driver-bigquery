@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Database\BigQuery\Schema;
+namespace Chinh\BigQuery\Schema;
 
 use Cake\Database\Schema\TableSchemaInterface;
 use Cake\Database\Schema\TableSchema;

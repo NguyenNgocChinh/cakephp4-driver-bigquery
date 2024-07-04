@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace App\Database\BigQuery\Driver;
+namespace Chinh\BigQuery;
 
-use App\Database\BigQuery\Schema\BigQuerySchemaDialect;
+use Chinh\BigQuery\Schema\BigQuerySchemaDialect;
 use Cake\Database\DriverInterface;
 use Cake\Database\Driver;
 use Closure;
 use Exception;
 use Google\Cloud\BigQuery\BigQueryClient;
 
-class BigQuery extends Driver implements DriverInterface
+class BigQueryDriver extends Driver implements DriverInterface
 {
     protected $_config;
     public $connected = false;
@@ -191,7 +191,7 @@ class BigQuery extends Driver implements DriverInterface
      * {@inheritdoc}
      * Returns an instance of BigQuerySchemaDialect for schema operations.
      *
-     * @return \App\Database\BigQuery\Schema\BigQuerySchemaDialect An instance of BigQuerySchemaDialect.
+     * @return Chinh\BigQuery\Schema\BigQuerySchemaDialect An instance of BigQuerySchemaDialect.
      */
     public function schemaDialect(): BigQuerySchemaDialect
     {
